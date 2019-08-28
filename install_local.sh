@@ -7,7 +7,7 @@ printf "###Build Done!"
 cd ..
 
 printf "\n\n#####  Cloning Platform..."
-git clone git@gitlab.com:iocom-platform/iocom-web.git
+git clone git@gitlab.com:iocom-platform/iocom-adm.git
 
 git clone git@gitlab.com:iocom-platform/iocom-api.git
 
