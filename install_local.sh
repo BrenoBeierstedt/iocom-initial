@@ -6,7 +6,10 @@ printf "###Build Done!"
 
 cd ..
 
-printf "\n\n#####  Cloning mobile..."
+printf "\n\n#####  Cloning Platform..."
+git clone git@gitlab.com:iocom-platform/iocom-web.git
+
+git clone git@gitlab.com:iocom-platform/iocom-api.git
 
 printf "\n\n##### Copying composer..."
 cp iocom/docker-compose-local.yml.sample docker-compose.yml
