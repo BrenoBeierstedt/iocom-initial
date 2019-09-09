@@ -56,6 +56,5 @@ id=1001
 
 ## Credits
 
-* Breno Mazieiro <breno.mazieiro@plathanus.com.br>
-* Natam Oliveira <natam.oliveira@plathanus.com.br>
-* Pascoal Vernieri Pascoal Pinto Vernieri <pascoal.vernieri@plathanus.com.br>
+* Breno Beierstedt <breno@iocom.com.br>
+* Francisco Luiz da Rosa <francisco@iocom.com.br>
