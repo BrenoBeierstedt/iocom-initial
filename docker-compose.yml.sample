@@ -97,6 +97,7 @@ services:
       main:
         aliases:
           - neo4j.iocom.com.br
+
   verne.iocom.com.br:
     image: erlio/docker-vernemq
     environment:
