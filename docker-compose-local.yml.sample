@@ -35,6 +35,7 @@ services:
       BROKER_PASSWORD: '@iocom.a1b2c3.@iocom'
       JWT_SECRET: '8hpZkeeJHbAawd7N'
       HASH_SECRET: '4vd6BbkQnr3bmCNe'
+      UPLOAD_DIR: 'https://storage.googleapis.com/idome/'
       IDOME_DEVICE: '6yfy8RKXrCEWvTSd'
       ADMIN_EMAIL: 'sistemas@iocom.com.br'
       ADMIN_PASSWORD: 'letmein'
