@@ -23,9 +23,9 @@ You need to manually edit the
 file in your pc (Mac and linux) and add:
 
 ```
-127.0.0.1   cashopera-adm.local.com
-127.0.0.1   cashopera-api.local.com
-127.0.0.1   neo4j.local.com
+127.0.0.1   api.local.iocom.com.br
+127.0.0.1   adm.local.iocom.com.br
+127.0.0.1   neo4j.local.iocom.com.br
 ```
 
 # Dockerfile 
