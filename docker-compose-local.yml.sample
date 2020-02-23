@@ -44,22 +44,22 @@ services:
       NEO4J_USER: 'neo4j'
       NEO4J_PASSWORD: 'letmein'
       WORKER_MINUTES: 60
-    command: ['./wait-for-it.sh', '-t', '0', 'neo4j.iocom.com.br:7474', '--', '.s2i/bin/assemble']
+    command: ['./wait-for-it.sh', '-t', '0', 'neo4j.local.iocom.com.br:7474', '--', '.s2i/bin/assemble']
     networks:
       main:
         aliases:
           - api.local.iocom.com.br
 
-  adm.local.iocom.com.br:
-    container_name: adm.local.iocom.com.br
+  local.iocom.com.br:
+    container_name: local.iocom.com.br
     image: iocom-nodejs
     restart: always
     ports:
       - 80
     volumes:
-      - "./iocom-adm:/opt/app-root/src:rw"
+      - "./iocom-web:/opt/app-root/src:rw"
     environment:
-      VIRTUAL_HOST: 'adm.local.iocom.com.br'
+      VIRTUAL_HOST: 'local.iocom.com.br'
       VIRTUAL_PORT: 80
       APP_ENV: 'development'
       ENV_ALIAS: 'development'
@@ -72,7 +72,7 @@ services:
       # PM2_SECRET_KEY: 'xxxxxxxxxxxxxxx'
       # PM2_WEB_CONCURRENCY: 1
       # PM2_WEB_MEMORY: 512
-    command: ['./wait-for-it.sh', '-t', '0', 'neo4j.iocom.com.br:7474', '--', '.s2i/bin/assemble']
+    command: ['./wait-for-it.sh', '-t', '0', 'neo4j.local.iocom.com.br:7474', '--', '.s2i/bin/assemble']
     networks:
       main:
         aliases:
