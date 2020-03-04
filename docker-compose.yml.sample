@@ -35,6 +35,8 @@ services:
       BROKER_PASSWORD: '@iocom.a1b2c3.@iocom'
       JWT_SECRET: '8hpZkeeJHbAawd7N'
       HASH_SECRET: '4vd6BbkQnr3bmCNe'
+      MAILGUN_KEY: 'afca90361a3031c6552cf2321ee08b0e-713d4f73-7387165d'
+      UPLOAD_DIR: 'https://storage.googleapis.com/idome/'
       IDOME_DEVICE: '6yfy8RKXrCEWvTSd'
       ADMIN_EMAIL: 'sistemas@iocom.com.br'
       ADMIN_PASSWORD: 'letmein'
@@ -56,7 +58,7 @@ services:
     ports:
       - 80
     volumes:
-      - "./iocom-adm:/opt/app-root/src:rw"
+      - "./iocom-web:/opt/app-root/src:rw"
     environment:
       VIRTUAL_HOST: 'adm.iocom.com.br'
       VIRTUAL_PORT: 80
