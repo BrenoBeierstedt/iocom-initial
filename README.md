@@ -57,4 +57,3 @@ id=1001
 ## Credits
 
 * Breno Beierstedt <breno@iocom.com.br>
-* Francisco Luiz da Rosa <francisco@iocom.com.br>
